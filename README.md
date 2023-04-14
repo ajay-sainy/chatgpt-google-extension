@@ -2,23 +2,11 @@
 
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/wong2/chatgpt-google-extension/pre-release-build.yml)
 ![Visitors](https://visitor-badge.glitch.me/badge?page_id=wong2.chat-gpt-google-extension&left_color=green&right_color=red)
-[![Twitter Follow](https://img.shields.io/twitter/follow/chatgpt4google?style=social)](https://twitter.com/chatgpt4google)
 ![License](https://img.shields.io/github/license/wong2/chatgpt-google-extension)
-
-### Notice (2023-02-20)
-
-As this extension has been acquired, this code repository will no longer be updated from now on.
-
-**My new project:**
-[ChatHub: All-in-one chatbot client](https://github.com/chathub-dev/chathub)
 
 ---
 
 A browser extension to display ChatGPT response alongside Google (and other search engines) results
-
-[Install from Chrome Web Store](https://chatgpt4google.com/chrome?utm_source=github)
-
-[Install from Mozilla Add-on Store](https://chatgpt4google.com/firefox?utm_source=github)
 
 [Changelog](https://chatgpt-for-google.canny.io/changelog)
 

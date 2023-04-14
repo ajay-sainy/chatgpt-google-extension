@@ -96,9 +96,9 @@ function ChatGPTQuery(props: Props) {
         </ReactMarkdown>
         {done && showTip && (
           <p className="italic mt-2">
-            Enjoy this extension? Give us a 5-star rating at{' '}
+            Please provide your feedback{' '}
             <a
-              href="https://chatgpt4google.com/chrome?utm_source=rating_tip"
+              href="https://<change>.com/chrome?utm_source=rating_tip"
               target="_blank"
               rel="noreferrer"
             >

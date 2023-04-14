@@ -1,17 +1,10 @@
-import { Button, Input, Select, Spinner, Tabs, useInput, useToasts } from '@geist-ui/core'
+import { Button, Input, Select, Tabs, useInput, useToasts } from '@geist-ui/core'
 import { FC, useCallback, useState } from 'react'
-import useSWR from 'swr'
-import { fetchExtensionConfigs } from '../api'
-import { getProviderConfigs, ProviderConfigs, ProviderType, saveProviderConfigs } from '../config'
+import { ProviderConfigs, ProviderType, saveProviderConfigs } from '../config'
 
 interface ConfigProps {
   config: ProviderConfigs
   models: string[]
-}
-
-async function loadModels(): Promise<string[]> {
-  const configs = await fetchExtensionConfigs()
-  return configs.openai_model_names
 }
 
 const ConfigPanel: FC<ConfigProps> = ({ config, models }) => {
@@ -86,16 +79,3 @@ const ConfigPanel: FC<ConfigProps> = ({ config, models }) => {
     </div>
   )
 }
-
-function ProviderSelect() {
-  const query = useSWR('provider-configs', async () => {
-    const [config, models] = await Promise.all([getProviderConfigs(), loadModels()])
-    return { config, models }
-  })
-  if (query.isLoading) {
-    return <Spinner />
-  }
-  return <ConfigPanel config={query.data!.config} models={query.data!.models} />
-}
-
-export default ProviderSelect
