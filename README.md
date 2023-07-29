@@ -1,53 +1,23 @@
-# ChatGPT for Google
+# ChatGPT for Google: Enriching Search Results
+This browser extension brings the power of ChatGPT to your Google searches (and other search engines), providing an AI-generated response alongside your regular search results.
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/wong2/chatgpt-google-extension/pre-release-build.yml)
-![Visitors](https://visitor-badge.glitch.me/badge?page_id=wong2.chat-gpt-google-extension&left_color=green&right_color=red)
-![License](https://img.shields.io/github/license/wong2/chatgpt-google-extension)
+## Preview
+Take a look at what this extension can do for your browsing experience:
 
----
+![Screenshot](screenshots/example.png?raw=true)
 
-A browser extension to display ChatGPT response alongside Google (and other search engines) results
+## Building from Source
+If you prefer to get your hands dirty with the code, follow these steps to build the extension from source:
 
-[Changelog](https://chatgpt-for-google.canny.io/changelog)
+1. Clone this GitHub repository.
+2. Inside the project folder, install the necessary dependencies using `npm install`.
+3. Run `npm run build` to create the build files.
+4. Depnding on your browser, load the relevant directory: `build/chromium/` for Google Chrome/Chromium-based browsers or `build/firefox/` for Firefox.
 
-## Supported Search Engines
+## Install from Chrome Web Store
+For a straightforward installation, you can add this extension directly from the [Chrome Web Store](https://chrome.google.com/webstore/detail/chatgpt-for-google/dbnpgchkndjddbnnfmoeocmbejdiipfe).
 
-Google, Baidu, Bing, DuckDuckGo, Brave, Yahoo, Naver, Yandex, Kagi, Searx
+## Acknowledgements
+This project is a fork of the deprecated repository originally created by [wong2](https://github.com/wong2/chatgpt-google-extension).
 
-## Screenshot
-
-![Screenshot](screenshots/extension.png?raw=true)
-
-## Features
-
-- Supports all popular search engines
-- Supports the official OpenAI API
-- Supports ChatGPT Plus
-- Markdown rendering
-- Code highlights
-- Dark mode
-- Provide feedback to improve ChatGPT
-- Copy to clipboard
-- Custom trigger mode
-- Switch languages
-
-## Troubleshooting
-
-### How to make it work in Brave
-
-![Screenshot](screenshots/brave.png?raw=true)
-
-Disable "Prevent sites from fingerprinting me based on my language preferences" in `brave://settings/shields`
-
-### How to make it work in Opera
-
-![Screenshot](screenshots/opera.png?raw=true)
-
-Enable "Allow access to search page results" in the extension management page
-
-## Build from source
-
-1. Clone the repo
-2. Install dependencies with `npm`
-3. `npm run build`
-4. Load `build/chromium/` or `build/firefox/` directory to your browser
+Remember, the beauty of open-source lies in collaboration, so feel free to explore, use, and provide feedback. Happy browsing!
